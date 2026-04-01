@@ -718,6 +718,16 @@ img {
 .gradient-7 { background: linear-gradient(135deg, #06b6d4, #8b5cf6); }
 .gradient-8 { background: linear-gradient(135deg, #10b981, #0066ff); }
 
+.card-image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .card-emoji-overlay {
   font-size: 3.5rem;
   letter-spacing: 0.5rem;

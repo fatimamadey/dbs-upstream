@@ -203,9 +203,20 @@ a {
 .card-image {
   height: 180px;
   position: relative;
+  overflow: hidden;
   display: flex;
   align-items: flex-end;
   padding: 12px;
+}
+
+.card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .card-badge {

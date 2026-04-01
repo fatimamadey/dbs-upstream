@@ -436,6 +436,25 @@ del {
     z-index: 10;
 }
 
+/* Sticky note image */
+.note-image {
+  width: 100%;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  border-radius: 2px;
+  border: 1.5px dashed rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.note-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* Category labels */
 .category {
     display: inline-block;
