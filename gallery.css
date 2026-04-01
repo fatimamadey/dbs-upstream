@@ -1,0 +1,245 @@
+/* ===========================
+   Upstream — Gallery Page
+   =========================== */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-800: #262626;
+  --gray-900: #171717;
+  --black: #0a0a0a;
+  --accent: #2563eb;
+  --radius: 12px;
+  --transition: 0.25s ease;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--gray-800);
+  background: var(--gray-100);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Header ---- */
+.gallery-header {
+  text-align: center;
+  padding: 64px 24px 48px;
+}
+
+.gallery-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.gallery-header p {
+  font-size: 1.0625rem;
+  color: var(--gray-500);
+}
+
+/* ---- Gallery Grid ---- */
+.gallery-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  flex: 1;
+}
+
+/* ---- Gallery Card ---- */
+.gallery-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.gallery-card:not(.locked):hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-card.locked {
+  cursor: default;
+  opacity: 0.6;
+}
+
+/* ---- Preview Area ---- */
+.gallery-preview {
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* V1 Preview — Minimal mockup */
+.preview-v1 {
+  background: var(--gray-50);
+  padding: 24px;
+}
+
+.preview-mockup {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mock-header {
+  height: 8px;
+  width: 60px;
+  background: var(--gray-800);
+  border-radius: 4px;
+}
+
+.mock-hero {
+  height: 6px;
+  width: 180px;
+  background: var(--gray-300);
+  border-radius: 3px;
+  margin: 4px auto;
+}
+
+.mock-pills {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.mock-pills span {
+  width: 40px;
+  height: 6px;
+  background: var(--gray-200);
+  border-radius: 3px;
+}
+
+.mock-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8px;
+}
+
+.mock-card-lg {
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  border-radius: 6px;
+  height: 80px;
+  grid-row: span 2;
+}
+
+.mock-card {
+  background: var(--gray-200);
+  border-radius: 6px;
+  height: 36px;
+}
+
+/* Locked preview */
+.preview-locked {
+  background: var(--gray-100);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.locked-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ---- Card Info ---- */
+.gallery-info {
+  padding: 24px;
+}
+
+.gallery-version {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: rgba(37, 99, 235, 0.08);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.locked .gallery-version {
+  color: var(--gray-400);
+  background: var(--gray-100);
+}
+
+.gallery-info h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+
+.gallery-info p {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+/* ---- Footer ---- */
+.gallery-footer {
+  text-align: center;
+  padding: 24px;
+  border-top: 1px solid var(--gray-200);
+}
+
+.gallery-footer p {
+  font-size: 0.8125rem;
+  color: var(--gray-400);
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+
+@media (max-width: 700px) {
+  .gallery-header {
+    padding: 40px 20px 32px;
+  }
+
+  .gallery-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 16px 48px;
+  }
+
+  .gallery-preview {
+    height: 200px;
+  }
+}
