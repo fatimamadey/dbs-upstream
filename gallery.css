@@ -421,6 +421,280 @@ body {
   border-radius: 4px;
 }
 
+/* ---- V4 Preview — Editorial Magazine ---- */
+.preview-v4 {
+  background: #f8f6f1;
+  padding: 20px;
+}
+
+.preview-mockup-v4 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mock-v4-masthead {
+  width: 80px;
+  height: 10px;
+  background: #2c2c2c;
+  border-radius: 1px;
+  margin: 0 auto;
+}
+
+.mock-v4-featured {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(135deg, #2b3a52, #7a2e3a);
+  border-radius: 2px;
+}
+
+.mock-v4-cols {
+  display: flex;
+  gap: 8px;
+}
+
+.mock-v4-main {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mock-v4-article {
+  height: 28px;
+  background: var(--white);
+  border-bottom: 1px solid #d4cfc5;
+}
+
+.mock-v4-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mock-v4-brief {
+  height: 18px;
+  background: var(--white);
+  border-left: 2px solid #7a2e3a;
+}
+
+/* ---- V5 Preview — Brutalist ---- */
+.preview-v5 {
+  background: #ffffff;
+  padding: 20px;
+  border-bottom: 3px solid #000;
+}
+
+.preview-mockup-v5 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mock-v5-title {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #000;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.mock-v5-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.mock-v5-block {
+  height: 32px;
+  border: 3px solid #000;
+  background: #fff;
+}
+
+.mock-v5-big {
+  grid-row: span 2;
+  height: auto;
+  background: #000;
+}
+
+.mock-v5-wide {
+  grid-column: span 2;
+  background: #ff0000;
+}
+
+/* ---- V9 Preview — News Ticker ---- */
+.preview-v9 {
+  background: #0a1628;
+  padding: 12px 20px;
+}
+
+.preview-mockup-v9 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mock-v9-ticker {
+  height: 6px;
+  background: #dc2626;
+  width: 100%;
+}
+
+.mock-v9-ticker-bottom {
+  background: #1e3a5f;
+}
+
+.mock-v9-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mock-v9-logo {
+  width: 60px;
+  height: 8px;
+  background: #ffffff;
+  border-radius: 1px;
+}
+
+.mock-v9-live {
+  display: flex;
+  align-items: center;
+}
+
+.mock-v9-dot {
+  width: 6px;
+  height: 6px;
+  background: #dc2626;
+  border-radius: 50%;
+  animation: pulse-dot 1.5s ease infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.mock-v9-breaking {
+  height: 8px;
+  background: #dc2626;
+  border-radius: 1px;
+}
+
+.mock-v9-content {
+  display: flex;
+  gap: 6px;
+}
+
+.mock-v9-main {
+  flex: 3;
+  height: 60px;
+  background: linear-gradient(135deg, #1e3a5f, #0a1628);
+  border: 1px solid #1e3a5f;
+  border-radius: 2px;
+}
+
+.mock-v9-sidebar {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mock-v9-update {
+  height: 17px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 2px solid #dc2626;
+}
+
+/* ---- V14 Preview — Student Satire ---- */
+.preview-v14 {
+  background: #fdf6e3;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 19px,
+    #e0d6c3 19px,
+    #e0d6c3 20px
+  );
+  padding: 20px;
+}
+
+.preview-mockup-v14 {
+  width: 100%;
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.mock-v14-note {
+  height: 44px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.mock-v14-yellow { background: #fff740; }
+.mock-v14-pink { background: #ff7eb9; }
+.mock-v14-blue { background: #7afcff; }
+.mock-v14-green { background: #98fb98; }
+
+/* ---- V15 Preview — Luxury / Premium ---- */
+.preview-v15 {
+  background: #0a1628;
+  padding: 24px;
+}
+
+.preview-mockup-v15 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.mock-v15-logo {
+  width: 70px;
+  height: 8px;
+  background: linear-gradient(90deg, #c9a84c, #f0d78c, #c9a84c);
+  border-radius: 1px;
+}
+
+.mock-v15-rule {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9a84c, transparent);
+}
+
+.mock-v15-headline {
+  width: 160px;
+  height: 6px;
+  background: rgba(201, 168, 76, 0.3);
+  border-radius: 1px;
+}
+
+.mock-v15-grid {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.mock-v15-card {
+  flex: 1;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: 4px;
+}
+
 /* ---- Locked Preview ---- */
 .preview-locked {
   background: var(--gray-100);

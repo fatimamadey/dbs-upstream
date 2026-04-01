@@ -1,0 +1,767 @@
+/* ============================================
+   UPSTREAM v5 -- BRUTALIST STYLE
+   NO POLISH. NO GRADIENTS. NO APOLOGIES.
+   ============================================ */
+
+/* RESET */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+/* BASE */
+html {
+    font-size: 16px;
+    scroll-behavior: auto;
+}
+
+body {
+    font-family: 'Arial Black', 'Impact', Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.2;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.site-header {
+    border-bottom: 5px solid #000;
+    background: #000;
+    color: #fff;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.main-nav {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-bottom: 4px solid #fff;
+    letter-spacing: 0.05em;
+    transition: background 0.1s, color 0.1s;
+}
+
+.main-nav a:hover {
+    background: #fff;
+    color: #000;
+    border-bottom-color: #000;
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+    border-bottom: 5px solid #000;
+    padding: 4rem 2rem;
+    min-height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    background: #fff;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 39px,
+            #000 39px,
+            #000 40px
+        );
+}
+
+.hero-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    background: #fff;
+    padding: 2rem;
+    border: 5px solid #000;
+}
+
+.hero-headline {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 0.95;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+
+.hero-sub {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #000;
+    border-top: 3px solid #000;
+    padding-top: 1rem;
+}
+
+/* ============================================
+   TRENDING
+   ============================================ */
+.trending {
+    border-bottom: 5px solid #000;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #FFFF00;
+}
+
+.trending-label {
+    font-family: 'Arial Black', Impact, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #000;
+    color: #FFFF00;
+    padding: 0.4rem 0.8rem;
+    flex-shrink: 0;
+}
+
+.trending-items {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.trending-items .separator {
+    margin: 0 0.5rem;
+    color: #000;
+    font-weight: 900;
+}
+
+/* ============================================
+   NEWS GRID
+   ============================================ */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-left: 5px solid #000;
+    border-right: 5px solid #000;
+    border-bottom: 5px solid #000;
+}
+
+/* Asymmetric layout assignments */
+.card-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.card-2 {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+
+.card-3 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.card-4 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.card-5 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.card-6 {
+    grid-column: 2 / 5;
+    grid-row: 3 / 5;
+}
+
+.card-7 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.card-8 {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+}
+
+/* CARD BASE */
+.card {
+    border: 3px solid #000;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background 0.1s, color 0.1s, border-color 0.1s;
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+}
+
+.card:hover {
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+.card:hover .card-category {
+    color: #000;
+}
+
+.card:hover .card-meta {
+    color: #aaa;
+    border-top-color: #fff;
+}
+
+/* CARD SIZES */
+.card-large {
+    padding: 2.5rem;
+}
+
+.card-large .card-title {
+    font-size: 2.5rem;
+}
+
+.card-medium .card-title {
+    font-size: 1.6rem;
+}
+
+.card-small .card-title {
+    font-size: 1.2rem;
+}
+
+/* CARD CATEGORY TAGS */
+.card-category {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: 0.3rem 0.6rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+.card-cat-business {
+    background: #FF0000;
+    color: #fff;
+}
+
+.card-cat-social {
+    background: #0000FF;
+    color: #fff;
+}
+
+.card-cat-community {
+    background: #FFFF00;
+    color: #000;
+}
+
+.card-cat-privacy {
+    background: #000;
+    color: #fff;
+}
+
+.card:hover .card-cat-privacy {
+    background: #fff;
+    color: #000;
+}
+
+.card-cat-opensource {
+    background: #FF0000;
+    color: #fff;
+}
+
+.card-cat-infra {
+    background: #0000FF;
+    color: #fff;
+}
+
+.card-cat-industry {
+    background: #FFFF00;
+    color: #000;
+}
+
+/* CARD TITLE */
+.card-title {
+    font-family: 'Arial Black', Impact, sans-serif;
+    font-weight: 900;
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+/* CARD EXCERPT */
+.card-excerpt {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* CARD META */
+.card-meta {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #666;
+    border-top: 3px solid #000;
+    padding-top: 0.75rem;
+    margin-top: auto;
+}
+
+/* SPECIFIC CARD ACCENTS */
+.card-1 {
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(255, 0, 0, 0.05) 10px,
+            rgba(255, 0, 0, 0.05) 20px
+        );
+}
+
+.card-1:hover {
+    background-image: none;
+    background-color: #000;
+}
+
+.card-6 {
+    background-image:
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 10px,
+            rgba(0, 0, 255, 0.05) 10px,
+            rgba(0, 0, 255, 0.05) 20px
+        );
+}
+
+.card-6:hover {
+    background-image: none;
+    background-color: #000;
+}
+
+/* Card 8 spans wide -- red left border accent */
+.card-8 {
+    border-left: 8px solid #FF0000;
+}
+
+.card-8:hover {
+    border-left-color: #FF0000;
+}
+
+/* ============================================
+   NEWSLETTER
+   ============================================ */
+.newsletter {
+    border-bottom: 5px solid #000;
+    background: #FF0000;
+    color: #fff;
+}
+
+.newsletter-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.newsletter-heading {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.newsletter-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0;
+    width: 100%;
+    max-width: 700px;
+}
+
+.newsletter-input {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    border: 4px solid #000;
+    border-right: none;
+    background: #fff;
+    color: #000;
+    flex-grow: 1;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 0;
+}
+
+.newsletter-input::placeholder {
+    color: #999;
+}
+
+.newsletter-input:focus {
+    background: #FFFF00;
+    color: #000;
+}
+
+.newsletter-btn {
+    font-family: 'Arial Black', Impact, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+    padding: 1rem 2.5rem;
+    border: 4px solid #000;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: background 0.1s, color 0.1s;
+    border-radius: 0;
+}
+
+.newsletter-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.site-footer {
+    background: #000;
+    color: #fff;
+    border-top: 5px solid #000;
+}
+
+.footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-logo {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+}
+
+.footer-tagline {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #888;
+}
+
+.footer-links {
+    flex-direction: row;
+    gap: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border: 3px solid #fff;
+    border-right: none;
+    transition: background 0.1s, color 0.1s;
+}
+
+.footer-links a:last-child {
+    border-right: 3px solid #fff;
+}
+
+.footer-links a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.footer-copy {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #666;
+    text-align: right;
+}
+
+/* ============================================
+   RESPONSIVE -- MOBILE
+   ============================================ */
+@media (max-width: 1024px) {
+    .hero-headline {
+        font-size: 4rem;
+    }
+
+    .newsletter-heading {
+        font-size: 3rem;
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-1 {
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+
+    .card-2 {
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+
+    .card-3 {
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+
+    .card-4 {
+        grid-column: 2 / 3;
+        grid-row: auto;
+    }
+
+    .card-5 {
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+
+    .card-6 {
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+
+    .card-7 {
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+
+    .card-8 {
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+    }
+
+    .main-nav a {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .hero {
+        min-height: 50vh;
+        padding: 2rem 1rem;
+    }
+
+    .hero-inner {
+        padding: 1.5rem;
+    }
+
+    .hero-headline {
+        font-size: 2.5rem;
+    }
+
+    .hero-sub {
+        font-size: 0.85rem;
+    }
+
+    .trending {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+        border-left: 3px solid #000;
+        border-right: 3px solid #000;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4,
+    .card-5,
+    .card-6,
+    .card-7,
+    .card-8 {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card-large .card-title,
+    .card-medium .card-title {
+        font-size: 1.4rem;
+    }
+
+    .card-small .card-title {
+        font-size: 1.1rem;
+    }
+
+    .newsletter-inner {
+        padding: 2.5rem 1rem;
+    }
+
+    .newsletter-heading {
+        font-size: 2.2rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-input {
+        border-right: 4px solid #000;
+        border-bottom: none;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+
+    .footer-copy {
+        text-align: left;
+    }
+}
+
+/* ============================================
+   STRIPED PATTERN UTILITY
+   (used on specific elements for texture)
+   ============================================ */
+.newsletter::before {
+    content: '';
+    display: block;
+    height: 20px;
+    background: repeating-linear-gradient(
+        90deg,
+        #000 0px,
+        #000 20px,
+        #FF0000 20px,
+        #FF0000 40px
+    );
+}
+
+.newsletter::after {
+    content: '';
+    display: block;
+    height: 20px;
+    background: repeating-linear-gradient(
+        90deg,
+        #FF0000 0px,
+        #FF0000 20px,
+        #000 20px,
+        #000 40px
+    );
+}
