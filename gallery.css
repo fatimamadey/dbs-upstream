@@ -55,14 +55,14 @@ body {
   color: var(--gray-500);
 }
 
-/* ---- Gallery Grid ---- */
+/* ---- Gallery Grid — 3 columns ---- */
 .gallery-grid {
-  max-width: 1100px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px 64px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   flex: 1;
 }
 
@@ -84,12 +84,12 @@ body {
 
 .gallery-card.locked {
   cursor: default;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 /* ---- Preview Area ---- */
 .gallery-preview {
-  height: 260px;
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +97,7 @@ body {
   position: relative;
 }
 
-/* V1 Preview — Minimal mockup */
+/* ---- V1 Preview — Minimal ---- */
 .preview-v1 {
   background: var(--gray-50);
   padding: 24px;
@@ -105,7 +105,7 @@ body {
 
 .preview-mockup {
   width: 100%;
-  max-width: 360px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -120,7 +120,7 @@ body {
 
 .mock-hero {
   height: 6px;
-  width: 180px;
+  width: 160px;
   background: var(--gray-300);
   border-radius: 3px;
   margin: 4px auto;
@@ -133,7 +133,7 @@ body {
 }
 
 .mock-pills span {
-  width: 40px;
+  width: 36px;
   height: 6px;
   background: var(--gray-200);
   border-radius: 3px;
@@ -142,30 +142,293 @@ body {
 .mock-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 8px;
+  gap: 6px;
 }
 
 .mock-card-lg {
   background: linear-gradient(135deg, #6366f1, #a855f7);
-  border-radius: 6px;
-  height: 80px;
+  border-radius: 5px;
+  height: 64px;
   grid-row: span 2;
 }
 
 .mock-card {
   background: var(--gray-200);
-  border-radius: 6px;
-  height: 36px;
+  border-radius: 5px;
+  height: 29px;
 }
 
-/* Locked preview */
+/* ---- V7 Preview — Retro 90s ---- */
+.preview-v7 {
+  background: #000080;
+  padding: 20px;
+}
+
+.preview-mockup-v7 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.mock-v7-marquee {
+  width: 100%;
+  height: 6px;
+  background: repeating-linear-gradient(90deg, #ff00ff, #ffff00, #00ff00, #ff00ff);
+  background-size: 200% 100%;
+  animation: marquee-shift 2s linear infinite;
+}
+
+@keyframes marquee-shift {
+  0% { background-position: 0% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.mock-v7-title {
+  width: 100px;
+  height: 10px;
+  background: #ffff00;
+  border-radius: 2px;
+}
+
+.mock-v7-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  width: 100%;
+}
+
+.mock-v7-card {
+  height: 40px;
+  border: 2px solid #ffffff;
+  border-radius: 0;
+}
+
+.mock-v7-hr {
+  width: 100%;
+  height: 3px;
+  background: repeating-linear-gradient(90deg, #ff0000, #ff0000 4px, transparent 4px, transparent 8px);
+}
+
+.mock-v7-counter {
+  width: 80px;
+  height: 8px;
+  background: #333;
+  border: 1px inset #888;
+}
+
+/* ---- V12 Preview — Soft Pastel ---- */
+.preview-v12 {
+  background: linear-gradient(135deg, #fdf2f8, #ede9fe, #e0f2fe);
+  padding: 20px;
+}
+
+.preview-mockup-v12 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.mock-v12-header {
+  width: 60px;
+  height: 8px;
+  background: #c084fc;
+  border-radius: 10px;
+}
+
+.mock-v12-hero {
+  width: 140px;
+  height: 6px;
+  background: #e9d5ff;
+  border-radius: 10px;
+}
+
+.mock-v12-pills {
+  display: flex;
+  gap: 6px;
+}
+
+.mock-v12-pills span {
+  width: 32px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.mock-v12-pills span:nth-child(1) { background: #fbc2eb; }
+.mock-v12-pills span:nth-child(2) { background: #a1c4fd; }
+.mock-v12-pills span:nth-child(3) { background: #d4fc79; }
+
+.mock-v12-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  width: 100%;
+}
+
+.mock-v12-card {
+  height: 48px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* ---- V13 Preview — Cyberpunk ---- */
+.preview-v13 {
+  background: #0a0a0a;
+  padding: 20px;
+}
+
+.preview-mockup-v13 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.mock-v13-scanlines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(255, 0, 0, 0.03) 2px,
+    rgba(255, 0, 0, 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mock-v13-header {
+  width: 70px;
+  height: 8px;
+  background: #dc2626;
+  border-radius: 2px;
+}
+
+.mock-v13-hero {
+  width: 160px;
+  height: 6px;
+  background: #991b1b;
+  border-radius: 2px;
+}
+
+.mock-v13-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.mock-v13-card {
+  height: 44px;
+  background: #1a1a1a;
+  border: 1px solid #dc2626;
+  border-radius: 2px;
+}
+
+/* ---- V16 Preview — Hacker Terminal ---- */
+.preview-v16 {
+  background: #0a0a0a;
+  padding: 20px 24px;
+  align-items: flex-start;
+  padding-top: 28px;
+}
+
+.preview-mockup-v16 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mock-v16-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 10px;
+}
+
+.mock-v16-prompt {
+  color: #00ff41;
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.mock-v16-text {
+  height: 4px;
+  width: 85%;
+  background: #00ff41;
+  opacity: 0.5;
+  border-radius: 1px;
+}
+
+.mock-v16-cursor {
+  width: 8px;
+  height: 12px;
+  background: #00ff41;
+  animation: blink-cursor 1s step-end infinite;
+  margin-top: 4px;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ---- V20 Preview — Comic ---- */
+.preview-v20 {
+  background: #fff8e1;
+  background-image: radial-gradient(circle, #00000008 1px, transparent 1px);
+  background-size: 8px 8px;
+  padding: 20px;
+}
+
+.preview-mockup-v20 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.mock-v20-title {
+  font-family: Impact, sans-serif;
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  text-shadow: 2px 2px 0 #000;
+  letter-spacing: 0.05em;
+}
+
+.mock-v20-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  width: 100%;
+}
+
+.mock-v20-card {
+  height: 44px;
+  border: 3px solid #000;
+  border-radius: 4px;
+}
+
+/* ---- Locked Preview ---- */
 .preview-locked {
   background: var(--gray-100);
   border-bottom: 1px solid var(--gray-200);
 }
 
 .locked-label {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: var(--gray-400);
   text-transform: uppercase;
@@ -174,7 +437,7 @@ body {
 
 /* ---- Card Info ---- */
 .gallery-info {
-  padding: 24px;
+  padding: 20px;
 }
 
 .gallery-version {
@@ -196,14 +459,14 @@ body {
 }
 
 .gallery-info h2 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--black);
   margin-bottom: 4px;
 }
 
 .gallery-info p {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: var(--gray-500);
   line-height: 1.5;
 }
@@ -224,7 +487,13 @@ body {
    Responsive
    =========================== */
 
-@media (max-width: 700px) {
+@media (max-width: 960px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
   .gallery-header {
     padding: 40px 20px 32px;
   }
@@ -240,6 +509,6 @@ body {
   }
 
   .gallery-preview {
-    height: 200px;
+    height: 180px;
   }
 }

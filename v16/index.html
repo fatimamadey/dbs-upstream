@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upstream v16 -- Hacker Terminal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- Matrix rain background -->
+  <div class="matrix-rain" aria-hidden="true">
+    <div class="rain-column" style="--col:0;--speed:12s;--delay:0s;">01001010110100101101001011010010110100101101001011010010110100101</div>
+    <div class="rain-column" style="--col:1;--speed:15s;--delay:-3s;">10110100101101001011010010110100101101001011010010110100101101001</div>
+    <div class="rain-column" style="--col:2;--speed:10s;--delay:-7s;">01101001011010010110100101101001011010010110100101101001011010010</div>
+    <div class="rain-column" style="--col:3;--speed:18s;--delay:-2s;">11010010110100101101001011010010110100101101001011010010110100101</div>
+    <div class="rain-column" style="--col:4;--speed:14s;--delay:-5s;">01001011010010110100101101001011010010110100101101001011010010110</div>
+    <div class="rain-column" style="--col:5;--speed:11s;--delay:-9s;">10100101101001011010010110100101101001011010010110100101101001011</div>
+    <div class="rain-column" style="--col:6;--speed:16s;--delay:-1s;">01010010110100101101001011010010110100101101001011010010110100101</div>
+    <div class="rain-column" style="--col:7;--speed:13s;--delay:-6s;">10010110100101101001011010010110100101101001011010010110100101101</div>
+    <div class="rain-column" style="--col:8;--speed:17s;--delay:-4s;">00101101001011010010110100101101001011010010110100101101001011010</div>
+    <div class="rain-column" style="--col:9;--speed:9s;--delay:-8s;">11001011010010110100101101001011010010110100101101001011010010110</div>
+    <div class="rain-column" style="--col:10;--speed:14s;--delay:-3s;">01100101101001011010010110100101101001011010010110100101101001011</div>
+    <div class="rain-column" style="--col:11;--speed:11s;--delay:-7s;">10011010010110100101101001011010010110100101101001011010010110100</div>
+  </div>
+
+  <!-- ====== HEADER ====== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <pre class="ascii-logo" aria-label="Upstream">
+ _   _           _
+| | | |_ __  ___| |_ _ __ ___  __ _ _ __ ___
+| | | | '_ \/ __| __| '__/ _ \/ _` | '_ ` _ \
+| |_| | |_) \__ \ |_| | |  __/ (_| | | | | | |
+ \___/| .__/|___/\__|_|  \___|\__,_|_| |_| |_|
+      |_|            <span class="version-tag">v16.0.0</span>
+        </pre>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#news">$ cat /news</a></li>
+          <li><a href="#security">$ ls /security</a></li>
+          <li><a href="#privacy">$ grep privacy</a></li>
+          <li><a href="#oss">$ find /oss</a></li>
+          <li><a href="#subscribe">$ ./subscribe.sh</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-border">+============================================================================+</div>
+  </header>
+
+  <!-- ====== HERO / BOOT SEQUENCE ====== -->
+  <section class="hero">
+    <div class="container">
+      <div class="terminal-window">
+        <div class="terminal-titlebar">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">upstream@mainframe:~</span>
+        </div>
+        <div class="terminal-body">
+          <p class="boot-line"><span class="prompt">BIOS</span> POST check .................... <span class="ok">[OK]</span></p>
+          <p class="boot-line"><span class="prompt">KERN</span> Loading kernel 6.12.4-upstream <span class="ok">[OK]</span></p>
+          <p class="boot-line"><span class="prompt">INIT</span> Mounting encrypted filesystems ... <span class="ok">[OK]</span></p>
+          <p class="boot-line"><span class="prompt">NET </span> Establishing Tor circuit ......... <span class="ok">[OK]</span></p>
+          <p class="boot-line"><span class="prompt">AUTH</span> Verifying PGP identity ........... <span class="ok">[OK]</span></p>
+          <p class="boot-line"><span class="prompt">SRVC</span> Starting upstream-news-daemon ..... <span class="ok">[OK]</span></p>
+          <p class="boot-line delay-6">&nbsp;</p>
+          <p class="boot-line hero-welcome delay-7">
+            <span class="prompt">$</span> Welcome to <span class="highlight">UPSTREAM</span> -- Your trusted source for security news, hacker culture, and open-source intelligence. All signal, no noise.<span class="cursor">_</span>
+          </p>
+          <p class="boot-line delay-8">
+            <span class="prompt">$</span> date --utc
+          </p>
+          <p class="boot-line delay-9">
+            Tue Mar 31 00:00:00 UTC 2026
+          </p>
+          <p class="boot-line delay-10">
+            <span class="prompt">$</span> uptime
+          </p>
+          <p class="boot-line delay-11">
+            16 versions, 0 compromises, 100% uptime
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TRENDING TOPICS ====== -->
+  <section class="trending">
+    <div class="container">
+      <div class="trending-bar">
+        <span class="prompt">$</span> tags --trending:
+        <span class="tag">#zero-day</span>
+        <span class="tag">#supply-chain</span>
+        <span class="tag">#ransomware</span>
+        <span class="tag">#tor</span>
+        <span class="tag">#rust-kernel</span>
+        <span class="tag">#openbsd</span>
+        <span class="tag">#defcon</span>
+        <span class="tag">#quantum-crypto</span>
+        <span class="tag">#cable-sabotage</span>
+        <span class="tag">#npm-attack</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== NEWS GRID ====== -->
+  <section class="news-grid" id="news">
+    <div class="container">
+      <h2 class="section-heading"><span class="prompt">$</span> cat /var/log/upstream/latest.log</h2>
+      <div class="ascii-divider">+------------------------------------------------------------------------+</div>
+
+      <div class="grid">
+
+        <!-- Card 1 -->
+        <article class="card" id="security">
+          <div class="card-header">
+            <span class="card-badge badge-sec">[sec]</span>
+            <span class="card-timestamp">2026-03-30 14:22 UTC</span>
+          </div>
+          <h3 class="card-title"><span class="label-critical">[CRITICAL]</span> Zero-Day in Linux Kernel 6.x Allows Root Escalation</h3>
+          <div class="card-body">
+            <p><span class="prompt">&gt;</span> A previously unknown vulnerability in the Linux kernel's netfilter subsystem (CVE-2026-1337) enables unprivileged local users to gain root access. All distributions running kernel 6.1 through 6.11 are affected.</p>
+            <p><span class="prompt">&gt;</span> Proof-of-concept exploit code has been circulating on dark web forums for at least 72 hours before public disclosure. Patch urgently.</p>
+          </div>
+          <div class="card-footer">
+            <span class="prompt">$</span> read more &gt;&gt; <a href="#">/vuln/CVE-2026-1337</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" id="privacy">
+          <div class="card-header">
+            <span class="card-badge badge-priv">[priv]</span>
+            <span class="card-timestamp">2026-03-29 09:15 UTC</span>
+          </div>
+          <h3 class="card-title"><span class="label-info">[INFO]</span> Tor Browser 14.0 Ships with Quantum-Resistant Encryption</h3>
+          <div class="card-body">
+            <p><span class="prompt">&gt;</span> The Tor Project has released version 14.0 of its flagship browser, integrating ML-KEM (Kyber) post-quantum key encapsulation into the circuit handshake protocol.</p>
+            <p><span class="prompt">&gt;</span> This makes Tor the first major anonymity network to deploy harvest-now-decrypt-later defenses at scale.</p>
+          </div>
+          <div class="card-footer">
+            <span class="prompt">$</span> read more &gt;&gt; <a href="#">/releases/tor-14.0</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-header">
+            <span class="card-badge badge-sec">[sec]</span>
+            <span class="card-timestamp">2026-03-28 18:47 UTC</span>
+          </div>
+          <h3 class="card-title"><span class="label-warn">[WARN]</span> npm Supply Chain Attack Compromises 1,200 Packages</h3>
+          <div class="card-body">
+            <p><span class="prompt">&gt;</span> A sophisticated supply chain attack injected credential-stealing code into 1,200 npm packages via a compromised maintainer account with 2FA bypass.</p>
+            <p><span class="prompt">&gt;</span> Affected packages include widely-used utility libraries with a combined 40M weekly downloads. Run <span class="inline-code">npm audit</span> immediately.</p>
+          </div>
+          <div class="card-footer">
+            <span class="prompt">$</span> read more &gt;&gt; <a href="#">/incidents/npm-2026-03</a>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card" id="oss">
+          <div class="card-header">
+            <span class="card-badge badge-oss">[oss]</span>
+            <span class="card-timestamp">2026-03-27 11:30 UTC</span>
+          </div>
+          <h3 class="card-title"><span class="label-info">[INFO]</span> OpenBSD 8.0 Released with Hardware-Level Memory Isolation</h3>
+          <div class="card-body">
+            <p><span class="prompt">&gt;</span> OpenBSD 8.0 introduces CHERI-based compartmentalization on supported ARM Morello hardware, isolating every process at the capability level.</p>
+            <p><span class="prompt">&gt;</span> Theo de Raadt calls it "the most significant security advancement in OpenBSD's 30-year history." Spatial and temporal memory safety enforced by silicon.</p>
+          </div>
+          <div class="card-footer">
+            <span class="prompt">$</span> read more &gt;&gt; <a href="#">/releases/openbsd-8.0</a>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card">
+          <div class="card-header">
+            <span class="card-badge badge-sec">[sec]</span>
+            <span class="card-timestamp">2026-03-26 06:03 UTC</span>
+          </div>
+          <h3 class="card-title"><span class="label-critical">[CRITICAL]</span> Hospital Network Ransomware Attack Exposes 4M Patient Records</h3>
+          <div class="card-body">
+            <p><span class="prompt">&gt;</span> A coordinated ransomware campaign attributed to the LockBit 4.0 group has struck a major US hospital network, encrypting systems across 23 facilities.</p>
+            <p><span class="prompt">&gt;</span> Attackers exfiltrated 4 million patient records before deploying the payload. Emergency departments diverted patients for 6+ hours.</p>
+          </div>
+          <div class="card-footer">
+            <span class="prompt">$</span> read more &gt;&gt; <a href="#">/incidents/lockbit-hospital</a>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card">
+          <div class="card-header">
+            <span class="card-badge badge-oss">[oss]</span>
+            <span class="card-timestamp">2026-03-25 15:20 UTC</span>
+          </div>
+          <h3 class="card-title"><span class="label-info">[INFO]</span> Rust Officially Adopted as Secondary Language in Linux Kernel</h3>
+          <div class="card-body">
+            <p><span class="prompt">&gt;</span> Linus Torvalds has merged the policy patch designating Rust as an officially supported secondary language for new Linux kernel subsystems.</p>
+            <p><span class="prompt">&gt;</span> New driver subsystems may now be written primarily in Rust. The net and GPU DRM trees are first in line for major Rust rewrites.</p>
+          </div>
+          <div class="card-footer">
+            <span class="prompt">$</span> read more &gt;&gt; <a href="#">/kernel/rust-policy</a>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="card">
+          <div class="card-header">
+            <span class="card-badge badge-geo">[geo]</span>
+            <span class="card-timestamp">2026-03-24 20:55 UTC</span>
+          </div>
+          <h3 class="card-title"><span class="label-warn">[WARN]</span> State-Sponsored Hackers Target Undersea Cable Infrastructure</h3>
+          <div class="card-body">
+            <p><span class="prompt">&gt;</span> Intelligence agencies confirm that APT groups linked to a nation-state actor have been probing management systems of undersea fiber optic cables in the North Atlantic.</p>
+            <p><span class="prompt">&gt;</span> Attacks target SCADA interfaces of cable landing stations. No confirmed disruption yet, but SIGINT interception capabilities suspected.</p>
+          </div>
+          <div class="card-footer">
+            <span class="prompt">$</span> read more &gt;&gt; <a href="#">/geopolitics/cable-threat</a>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="card">
+          <div class="card-header">
+            <span class="card-badge badge-comm">[comm]</span>
+            <span class="card-timestamp">2026-03-23 12:10 UTC</span>
+          </div>
+          <h3 class="card-title"><span class="label-info">[INFO]</span> DEF CON CTF Won by Open-Source AI Red Team Tool</h3>
+          <div class="card-body">
+            <p><span class="prompt">&gt;</span> For the first time in DEF CON history, the Capture the Flag competition was won by a team using an open-source AI-powered red team framework called "Specter."</p>
+            <p><span class="prompt">&gt;</span> Specter autonomously discovered and exploited 14 of 20 challenge binaries. The tool is now available on GitHub under the Apache 2.0 license.</p>
+          </div>
+          <div class="card-footer">
+            <span class="prompt">$</span> read more &gt;&gt; <a href="#">/community/defcon-ctf</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== NEWSLETTER SIGNUP ====== -->
+  <section class="newsletter" id="subscribe">
+    <div class="container">
+      <div class="terminal-window">
+        <div class="terminal-titlebar">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">upstream@mainframe:~/subscribe</span>
+        </div>
+        <div class="terminal-body newsletter-body">
+          <p><span class="prompt">$</span> cat /etc/motd</p>
+          <pre class="newsletter-ascii">
+  ___       _                   _ _
+ / __|_   _| |__  ___  ___ _ __(_) |__   ___
+ \__ \ | | | '_ \/ __|/ __| '__| | '_ \ / _ \
+ ___) | |_| | |_) \__ \ (__| |  | | |_) |  __/
+|____/ \__,_|_.__/|___/\___|_|  |_|_.__/ \___|
+          </pre>
+          <p><span class="prompt">&gt;</span> Get weekly threat intelligence, CVE roundups, and hacker culture dispatches.</p>
+          <p><span class="prompt">&gt;</span> Encrypted delivery via PGP. No tracking pixels. No telemetry. Ever.</p>
+          <form class="newsletter-form" action="#" method="post">
+            <div class="input-line">
+              <label for="email-input"><span class="prompt">$</span> subscribe --email=</label>
+              <input type="email" id="email-input" name="email" placeholder="user@protonmail.com" required autocomplete="email">
+              <button type="submit">[ ENTER ]</button>
+            </div>
+          </form>
+          <p class="newsletter-note"><span class="prompt">#</span> Your data is hashed and salted. We couldn't sell it even if we wanted to.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-border">+============================================================================+</div>
+      <div class="footer-content">
+        <div class="footer-col">
+          <pre class="footer-logo">
+ _   _           _
+| | | |_ __  ___| |_ _ __ ___  __ _ _ __ ___
+ \___/| .__/|___/\__|_|  \___|\__,_|_| |_| |_|
+      |_|
+          </pre>
+          <p class="footer-tagline"><span class="prompt">#</span> All signal. No noise. Since 2010.</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">// NAVIGATION</p>
+          <ul>
+            <li><a href="#news">$ cd /news</a></li>
+            <li><a href="#security">$ cd /security</a></li>
+            <li><a href="#privacy">$ cd /privacy</a></li>
+            <li><a href="#oss">$ cd /open-source</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">// NETWORK</p>
+          <ul>
+            <li><a href="#">$ ssh git@github.com</a></li>
+            <li><a href="#">$ finger mastodon@infosec</a></li>
+            <li><a href="#">$ curl rss.upstream.io</a></li>
+            <li><a href="#">$ gpg --recv-keys 0xUPSTREAM</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">// LEGAL</p>
+          <ul>
+            <li><a href="#">$ cat /privacy-policy</a></li>
+            <li><a href="#">$ cat /terms</a></li>
+            <li><a href="#">$ cat /LICENSE</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>// (c) 2026 Upstream Media. All rights reserved.</p>
+        <p>// Built with zero JavaScript. Verified with zero trackers.</p>
+        <p class="footer-hash">// SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</p>
+        <p>upstream@mainframe:~$ logout<span class="cursor">_</span></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
