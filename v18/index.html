@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upstream — Tech News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Upstream</a>
+      <nav class="nav">
+        <a href="#" class="nav-link">Trending</a>
+        <a href="#" class="nav-link">Hardware</a>
+        <a href="#" class="nav-link">Software</a>
+        <a href="#" class="nav-link">Business</a>
+        <a href="#" class="nav-link">Design</a>
+      </nav>
+      <a href="#newsletter" class="btn btn-cta">Subscribe</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <p class="hero-label">The Pulse of Tech</p>
+      <h1 class="hero-title">Stay ahead of the <span class="gradient-text">technology curve</span></h1>
+      <p class="hero-subtitle">Curated stories from the frontier of hardware, software, design, and business — delivered with clarity.</p>
+      <a href="#articles" class="btn btn-hero pulse">Read Today's Stories</a>
+    </div>
+  </section>
+
+  <!-- Trending Topics -->
+  <section class="topics">
+    <div class="container">
+      <h2 class="section-title">Trending Topics</h2>
+      <div class="pills">
+        <a href="#" class="pill">AI &amp; Machine Learning</a>
+        <a href="#" class="pill">Apple Silicon</a>
+        <a href="#" class="pill">Web Development</a>
+        <a href="#" class="pill">Design Tools</a>
+        <a href="#" class="pill">Startups</a>
+        <a href="#" class="pill">Open Source</a>
+        <a href="#" class="pill">Developer Experience</a>
+        <a href="#" class="pill">Cloud Infrastructure</a>
+        <a href="#" class="pill">Browsers</a>
+        <a href="#" class="pill">CSS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles Grid -->
+  <section class="articles" id="articles">
+    <div class="container">
+      <h2 class="section-title">Latest Stories</h2>
+      <div class="grid">
+
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card-image">
+            <div class="card-image-placeholder" style="--hue: 210;">
+              <span>M5</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-hardware">Hardware</span>
+            <h3 class="card-title">Apple Announces M5 Chip with Dedicated AI Core</h3>
+            <p class="card-excerpt">Apple's next-generation silicon features a purpose-built neural engine capable of running 40B parameter models entirely on-device, marking a major leap in local AI processing power.</p>
+            <div class="card-meta">
+              <span class="card-author">Sarah Chen</span>
+              <span class="card-date">Mar 31, 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card-image">
+            <div class="card-image-placeholder" style="--hue: 280;">
+              <span>Figma AI</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-design">Design</span>
+            <h3 class="card-title">Figma's New AI Features Can Generate Full UI Designs from Text</h3>
+            <p class="card-excerpt">The design tool's latest update turns natural language prompts into production-ready component layouts, complete with proper spacing, typography, and responsive behavior.</p>
+            <div class="card-meta">
+              <span class="card-author">Marcus Rivera</span>
+              <span class="card-date">Mar 30, 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-image">
+            <div class="card-image-placeholder" style="--hue: 170;">
+              <span>Edge 2.0</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-infra">Infrastructure</span>
+            <h3 class="card-title">Vercel Launches Edge Functions 2.0 with Sub-Millisecond Cold Starts</h3>
+            <p class="card-excerpt">The new runtime eliminates cold start latency almost entirely, enabling real-time personalization and dynamic rendering at the edge for every request.</p>
+            <div class="card-meta">
+              <span class="card-author">Priya Patel</span>
+              <span class="card-date">Mar 29, 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <div class="card-image">
+            <div class="card-image-placeholder" style="--hue: 200;">
+              <span>React 21</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-software">Software</span>
+            <h3 class="card-title">React 21 Introduces Built-In State Machines</h3>
+            <p class="card-excerpt">The latest major React release ships with first-class support for state machines, dramatically simplifying complex UI state management without third-party libraries.</p>
+            <div class="card-meta">
+              <span class="card-author">Jake Morrison</span>
+              <span class="card-date">Mar 28, 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card">
+          <div class="card-image">
+            <div class="card-image-placeholder" style="--hue: 260;">
+              <span>$20B</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-business">Business</span>
+            <h3 class="card-title">Stripe's Revenue Crosses $20 Billion, Eyes IPO</h3>
+            <p class="card-excerpt">The payments giant signals it may finally go public after years of speculation, as annual revenue surpasses $20 billion and profitability strengthens across all segments.</p>
+            <div class="card-meta">
+              <span class="card-author">Elena Vasquez</span>
+              <span class="card-date">Mar 27, 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card">
+          <div class="card-image">
+            <div class="card-image-placeholder" style="--hue: 230;">
+              <span>Linear</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-software">Software</span>
+            <h3 class="card-title">Linear's Approach to Project Management Is Converting Enterprise Teams</h3>
+            <p class="card-excerpt">Once a darling of startups, Linear's opinionated take on issue tracking is now winning over Fortune 500 engineering teams tired of bloated legacy tools.</p>
+            <div class="card-meta">
+              <span class="card-author">David Kim</span>
+              <span class="card-date">Mar 26, 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="card">
+          <div class="card-image">
+            <div class="card-image-placeholder" style="--hue: 310;">
+              <span>Arc</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-software">Software</span>
+            <h3 class="card-title">Arc Browser Reaches 10 Million Users, Challenges Chrome's Dominance</h3>
+            <p class="card-excerpt">The Browser Company's reimagined web browser crosses a major milestone, proving there's real appetite for a fundamentally different browsing experience.</p>
+            <div class="card-meta">
+              <span class="card-author">Aisha Johnson</span>
+              <span class="card-date">Mar 25, 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="card">
+          <div class="card-image">
+            <div class="card-image-placeholder" style="--hue: 190;">
+              <span>TW 5.0</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-software">Software</span>
+            <h3 class="card-title">Tailwind CSS 5.0 Ships with Built-In Design System</h3>
+            <p class="card-excerpt">The utility-first framework's biggest release yet includes a complete design system with tokens, semantic layers, and automatic dark mode — no configuration required.</p>
+            <div class="card-meta">
+              <span class="card-author">Tom Henderson</span>
+              <span class="card-date">Mar 24, 2026</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter" id="newsletter">
+    <div class="container newsletter-inner">
+      <h2 class="newsletter-title">Stay in the <span class="gradient-text">loop</span></h2>
+      <p class="newsletter-desc">Get the five most important tech stories delivered to your inbox every morning. No spam, no fluff.</p>
+      <form class="newsletter-form" action="#" method="post">
+        <div class="input-wrapper">
+          <input type="email" class="newsletter-input" placeholder="you@example.com" required>
+        </div>
+        <button type="submit" class="btn btn-cta btn-newsletter pulse">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">Upstream</a>
+        <p class="footer-tagline">Clarity in a noisy tech world.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 class="footer-heading">Sections</h4>
+          <a href="#" class="footer-link">Hardware</a>
+          <a href="#" class="footer-link">Software</a>
+          <a href="#" class="footer-link">Design</a>
+          <a href="#" class="footer-link">Business</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Company</h4>
+          <a href="#" class="footer-link">About</a>
+          <a href="#" class="footer-link">Careers</a>
+          <a href="#" class="footer-link">Contact</a>
+          <a href="#" class="footer-link">Advertise</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Social</h4>
+          <a href="#" class="footer-link">Twitter / X</a>
+          <a href="#" class="footer-link">Mastodon</a>
+          <a href="#" class="footer-link">LinkedIn</a>
+          <a href="#" class="footer-link">RSS Feed</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Upstream. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

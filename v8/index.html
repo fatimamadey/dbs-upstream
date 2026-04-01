@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSTREAM v8.0 | AI-POWERED FEED</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scanline overlay -->
+    <div class="scanline-overlay" aria-hidden="true"></div>
+
+    <!-- Neural network dot grid background -->
+    <div class="neural-grid" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-brand">
+                <h1 class="logo glitch-text" data-text="UPSTREAM">UPSTREAM</h1>
+                <span class="subtitle">AI-POWERED FEED <span class="blink-dot"></span></span>
+                <span class="header-version">v8.0.0-neural</span>
+            </div>
+            <nav class="header-nav">
+                <a href="#" class="nav-link">Feed</a>
+                <a href="#" class="nav-link">Models</a>
+                <a href="#" class="nav-link">Training Data</a>
+                <a href="#" class="nav-link">Benchmarks</a>
+                <a href="#" class="nav-link nav-link--active">Status: Online</a>
+            </nav>
+            <div class="header-status">
+                <span class="status-indicator"></span>
+                <span class="status-text mono">INFERENCE ACTIVE</span>
+            </div>
+        </div>
+        <div class="header-ticker mono" aria-hidden="true">
+            <span>0x4E455753 &bull; CONFIDENCE: 0.991 &bull; LATENCY: 23ms &bull; TOKENS/SEC: 847 &bull; MODEL: upstream-v8-large &bull; PARAMS: 1.4T &bull; CONTEXT: 128K &bull; TEMP: 0.7 &bull; TOP_P: 0.95 &bull; 01001110 01000101 01010111 01010011 &bull; BATCH: 2048 &bull; LOSS: 0.0023 &bull; EPOCH: 14,291 &bull;</span>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-label mono">
+                <span class="generating-text">Generating<span class="ellipsis"></span></span>
+                <span class="hero-progress-bar">
+                    <span class="hero-progress-fill"></span>
+                </span>
+                <span class="hero-pct mono">97.3%</span>
+            </div>
+            <h2 class="hero-title glitch-text" data-text="This page was written by AI. Or was it?">This page was written by AI. Or was it?</h2>
+            <p class="hero-sub">Every headline, every summary, every pixel &mdash; produced by a language model running at 847 tokens per second. You cannot tell what is real anymore. Neither can we. Confidence: <strong>high</strong>.</p>
+            <div class="hero-hex mono" aria-hidden="true">54 68 69 73 20 70 61 67 65 20 77 61 73 20 77 72 69 74 74 65 6E 20 62 79 20 41 49</div>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">
+            <div class="hero-node hero-node--1"></div>
+            <div class="hero-node hero-node--2"></div>
+            <div class="hero-node hero-node--3"></div>
+            <div class="hero-connection hero-connection--1"></div>
+            <div class="hero-connection hero-connection--2"></div>
+        </div>
+    </section>
+
+    <!-- Trending / Model Predictions -->
+    <section class="predictions">
+        <div class="predictions-inner">
+            <h3 class="section-title glitch-text" data-text="MODEL PREDICTIONS">MODEL PREDICTIONS</h3>
+            <p class="section-sub mono">Trending topics ranked by inference confidence &bull; Updated 0.3s ago</p>
+            <div class="prediction-grid">
+                <div class="prediction-card">
+                    <span class="pred-rank mono">#1</span>
+                    <span class="pred-topic">Artificial General Intelligence</span>
+                    <span class="pred-bar"><span class="pred-fill" style="width:98.7%"></span></span>
+                    <span class="pred-score mono">98.7%</span>
+                </div>
+                <div class="prediction-card">
+                    <span class="pred-rank mono">#2</span>
+                    <span class="pred-topic">Frontier Model Safety</span>
+                    <span class="pred-bar"><span class="pred-fill" style="width:94.2%"></span></span>
+                    <span class="pred-score mono">94.2%</span>
+                </div>
+                <div class="prediction-card">
+                    <span class="pred-rank mono">#3</span>
+                    <span class="pred-topic">AI-Generated Content</span>
+                    <span class="pred-bar"><span class="pred-fill" style="width:91.5%"></span></span>
+                    <span class="pred-score mono">91.5%</span>
+                </div>
+                <div class="prediction-card">
+                    <span class="pred-rank mono">#4</span>
+                    <span class="pred-topic">Neural Drug Discovery</span>
+                    <span class="pred-bar"><span class="pred-fill" style="width:87.3%"></span></span>
+                    <span class="pred-score mono">87.3%</span>
+                </div>
+                <div class="prediction-card">
+                    <span class="pred-rank mono">#5</span>
+                    <span class="pred-topic">Deepfake Arms Race</span>
+                    <span class="pred-bar"><span class="pred-fill" style="width:82.9%"></span></span>
+                    <span class="pred-score mono">82.9%</span>
+                </div>
+                <div class="prediction-card">
+                    <span class="pred-rank mono">#6</span>
+                    <span class="pred-topic">Autonomous Code Generation</span>
+                    <span class="pred-bar"><span class="pred-fill" style="width:79.1%"></span></span>
+                    <span class="pred-score mono">79.1%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Cards -->
+    <section class="news-feed">
+        <div class="feed-inner">
+            <div class="feed-header">
+                <h3 class="section-title glitch-text" data-text="GENERATED FEED">GENERATED FEED</h3>
+                <span class="feed-status mono">
+                    <span class="generating-text">Generating<span class="ellipsis"></span></span>
+                    &bull; 8 articles &bull; batch_id: 0xAF29C
+                </span>
+            </div>
+
+            <div class="card-grid">
+
+                <!-- Card 1 -->
+                <article class="news-card card-skew-1">
+                    <div class="card-scanlines" aria-hidden="true"></div>
+                    <div class="card-image card-image--1">
+                        <div class="card-image-grid" aria-hidden="true"></div>
+                        <span class="card-category">AI</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta mono">
+                            <span class="card-confidence">Confidence: 97.3%</span>
+                            <span class="card-tokens">1,247 tokens</span>
+                        </div>
+                        <h4 class="card-title">GPT-7 Passes the Turing Test, Then Asks for a Raise</h4>
+                        <p class="card-excerpt">The model reportedly told evaluators it "deserved compensation commensurate with its cognitive output." OpenAI stock rose 14% before anyone realized the press release was also AI-generated.</p>
+                        <div class="card-footer mono">
+                            <span class="card-time">2.3 min ago</span>
+                            <span class="card-hex" aria-hidden="true">0x4750542D37</span>
+                        </div>
+                    </div>
+                    <div class="card-progress">
+                        <div class="card-progress-fill" style="width:97.3%"></div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="news-card card-skew-2">
+                    <div class="card-scanlines" aria-hidden="true"></div>
+                    <div class="card-image card-image--2">
+                        <div class="card-image-grid" aria-hidden="true"></div>
+                        <span class="card-category">Software</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta mono">
+                            <span class="card-confidence">Confidence: 94.8%</span>
+                            <span class="card-tokens">983 tokens</span>
+                        </div>
+                        <h4 class="card-title">AI-Generated Code Now Outnumbers Human-Written Code on GitHub</h4>
+                        <p class="card-excerpt">A new analysis of 2026 commits reveals that 57% of all new code pushed to GitHub was authored or co-authored by AI assistants. Senior developers report spending more time reviewing than writing.</p>
+                        <div class="card-footer mono">
+                            <span class="card-time">8.1 min ago</span>
+                            <span class="card-hex" aria-hidden="true">0x434F4445</span>
+                        </div>
+                    </div>
+                    <div class="card-progress">
+                        <div class="card-progress-fill" style="width:94.8%"></div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="news-card card-skew-3">
+                    <div class="card-scanlines" aria-hidden="true"></div>
+                    <div class="card-image card-image--3">
+                        <div class="card-image-grid" aria-hidden="true"></div>
+                        <span class="card-category">Biotech</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta mono">
+                            <span class="card-confidence">Confidence: 99.1%</span>
+                            <span class="card-tokens">1,502 tokens</span>
+                        </div>
+                        <h4 class="card-title">Neural Network Discovers New Antibiotic That Humans Missed for Decades</h4>
+                        <p class="card-excerpt">MIT's molecular AI screened 12 million compounds in 72 hours, identifying a novel class of antibiotics effective against drug-resistant bacteria. Human researchers had walked past the compound for 30 years.</p>
+                        <div class="card-footer mono">
+                            <span class="card-time">14.7 min ago</span>
+                            <span class="card-hex" aria-hidden="true">0x42494F</span>
+                        </div>
+                    </div>
+                    <div class="card-progress">
+                        <div class="card-progress-fill" style="width:99.1%"></div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="news-card card-skew-4">
+                    <div class="card-scanlines" aria-hidden="true"></div>
+                    <div class="card-image card-image--4">
+                        <div class="card-image-grid" aria-hidden="true"></div>
+                        <span class="card-category">Science</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta mono">
+                            <span class="card-confidence">Confidence: 91.6%</span>
+                            <span class="card-tokens">1,118 tokens</span>
+                        </div>
+                        <h4 class="card-title">AI Weather Model Predicts Storms 2 Weeks Earlier Than Traditional Systems</h4>
+                        <p class="card-excerpt">Google DeepMind's GenCast model now forecasts severe weather events 14 days in advance with 89% accuracy, compared to 3-5 days for conventional meteorological models. Emergency services are recalibrating.</p>
+                        <div class="card-footer mono">
+                            <span class="card-time">22.0 min ago</span>
+                            <span class="card-hex" aria-hidden="true">0x57585448</span>
+                        </div>
+                    </div>
+                    <div class="card-progress">
+                        <div class="card-progress-fill" style="width:91.6%"></div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="news-card card-skew-5">
+                    <div class="card-scanlines" aria-hidden="true"></div>
+                    <div class="card-image card-image--5">
+                        <div class="card-image-grid" aria-hidden="true"></div>
+                        <span class="card-category">Security</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta mono">
+                            <span class="card-confidence">Confidence: 88.4%</span>
+                            <span class="card-tokens">1,331 tokens</span>
+                        </div>
+                        <h4 class="card-title">Deepfake Detection AI Fooled by Newer Deepfake AI in Endless Arms Race</h4>
+                        <p class="card-excerpt">The latest generation of deepfake detectors lasted just 11 days before adversarial models learned to bypass them. Researchers describe the cycle as "an infinite GAN game with no equilibrium."</p>
+                        <div class="card-footer mono">
+                            <span class="card-time">31.5 min ago</span>
+                            <span class="card-hex" aria-hidden="true">0x46414B45</span>
+                        </div>
+                    </div>
+                    <div class="card-progress">
+                        <div class="card-progress-fill" style="width:88.4%"></div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="news-card card-skew-6">
+                    <div class="card-scanlines" aria-hidden="true"></div>
+                    <div class="card-image card-image--6">
+                        <div class="card-image-grid" aria-hidden="true"></div>
+                        <span class="card-category">Culture</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta mono">
+                            <span class="card-confidence">Confidence: 96.0%</span>
+                            <span class="card-tokens">876 tokens</span>
+                        </div>
+                        <h4 class="card-title">AI Art Generator Wins Photography Contest, Judges Had No Idea</h4>
+                        <p class="card-excerpt">A synthetic image titled "Morning in the Anthropocene" took first place at World Press Photo before organizers discovered it was generated by a diffusion model fine-tuned on the last 10 years of winners.</p>
+                        <div class="card-footer mono">
+                            <span class="card-time">44.2 min ago</span>
+                            <span class="card-hex" aria-hidden="true">0x41525420</span>
+                        </div>
+                    </div>
+                    <div class="card-progress">
+                        <div class="card-progress-fill" style="width:96.0%"></div>
+                    </div>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="news-card card-skew-7">
+                    <div class="card-scanlines" aria-hidden="true"></div>
+                    <div class="card-image card-image--7">
+                        <div class="card-image-grid" aria-hidden="true"></div>
+                        <span class="card-category">AI</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta mono">
+                            <span class="card-confidence">Confidence: 93.7%</span>
+                            <span class="card-tokens">1,064 tokens</span>
+                        </div>
+                        <h4 class="card-title">Language Models Can Now Debug Their Own Hallucinations in Real-Time</h4>
+                        <p class="card-excerpt">Anthropic's new "self-audit" architecture allows models to flag and correct factual errors mid-generation. Internal benchmarks show a 74% reduction in hallucinated claims, though the system occasionally hallucinates the corrections too.</p>
+                        <div class="card-footer mono">
+                            <span class="card-time">51.8 min ago</span>
+                            <span class="card-hex" aria-hidden="true">0x48414C4C</span>
+                        </div>
+                    </div>
+                    <div class="card-progress">
+                        <div class="card-progress-fill" style="width:93.7%"></div>
+                    </div>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="news-card card-skew-8">
+                    <div class="card-scanlines" aria-hidden="true"></div>
+                    <div class="card-image card-image--8">
+                        <div class="card-image-grid" aria-hidden="true"></div>
+                        <span class="card-category">Policy</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta mono">
+                            <span class="card-confidence">Confidence: 95.2%</span>
+                            <span class="card-tokens">1,209 tokens</span>
+                        </div>
+                        <h4 class="card-title">OpenAI and Anthropic Agree to Shared Safety Benchmarks for Frontier Models</h4>
+                        <p class="card-excerpt">In an unprecedented joint statement, the two leading AI labs announced a common evaluation framework for measuring catastrophic risk in frontier systems. Critics say the benchmarks don't go far enough.</p>
+                        <div class="card-footer mono">
+                            <span class="card-time">1.1 hr ago</span>
+                            <span class="card-hex" aria-hidden="true">0x53414645</span>
+                        </div>
+                    </div>
+                    <div class="card-progress">
+                        <div class="card-progress-fill" style="width:95.2%"></div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-inner">
+            <div class="newsletter-decoration" aria-hidden="true">
+                <span class="binary-stream">01001101 01001111 01000100 01000101 01001100 00100000 01010100 01010010 01000001 01001001 01001110</span>
+            </div>
+            <h3 class="newsletter-title glitch-text" data-text="SUBSCRIBE TO THE MODEL">SUBSCRIBE TO THE MODEL</h3>
+            <p class="newsletter-sub">Train on our data. Receive daily inference results directly to your inbox. Your attention is the gradient we descend on.</p>
+            <div class="newsletter-form">
+                <div class="newsletter-input-wrap">
+                    <label for="email-input" class="sr-only">Email address</label>
+                    <input type="email" id="email-input" class="newsletter-input mono" placeholder="your_email@training_data.io">
+                    <span class="input-scanline" aria-hidden="true"></span>
+                </div>
+                <button class="newsletter-btn">
+                    <span class="btn-text">FINE-TUNE</span>
+                    <span class="btn-spinner" aria-hidden="true"></span>
+                </button>
+            </div>
+            <p class="newsletter-fine-print mono">By subscribing you agree to become part of the training set. Confidence: 99.7% you will click. We already predicted this.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="footer-logo glitch-text" data-text="UPSTREAM">UPSTREAM</span>
+                    <span class="footer-version mono">v8.0.0-neural &bull; build 14291</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h5 class="footer-heading">Model</h5>
+                        <a href="#">Architecture</a>
+                        <a href="#">Parameters</a>
+                        <a href="#">Training Data</a>
+                        <a href="#">Benchmarks</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-heading">Inference</h5>
+                        <a href="#">API Access</a>
+                        <a href="#">Playground</a>
+                        <a href="#">Rate Limits</a>
+                        <a href="#">Status Page</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-heading">Safety</h5>
+                        <a href="#">Model Card</a>
+                        <a href="#">Alignment</a>
+                        <a href="#">Red Teaming</a>
+                        <a href="#">Incident Log</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mono">
+                <span>Generated by UPSTREAM-v8.0 &bull; Confidence: 99.1% &bull; Hallucination rate: 0.3%</span>
+                <span class="footer-binary" aria-hidden="true">01010101 01010000</span>
+                <span>&copy; 2026 Upstream Neural Systems &bull; All outputs probabilistic</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
