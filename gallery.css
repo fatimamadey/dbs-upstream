@@ -1273,6 +1273,216 @@ body {
   border-radius: 4px;
 }
 
+/* ---- V22 Preview — Magazine Flipbook ---- */
+.preview-v22 {
+  background: #f5f0e8;
+  padding: 20px;
+}
+
+.preview-mockup-v22 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mock-v22-cover {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(135deg, #1a2744, #c1432e);
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mock-v22-pages {
+  display: flex;
+  flex-direction: column;
+  gap: -4px;
+}
+
+.mock-v22-page {
+  height: 30px;
+  background: #faf5ee;
+  border: 1px solid #e0d6c5;
+  border-radius: 2px;
+  margin-top: -4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* ---- V23 Preview — Minimalist Zen ---- */
+.preview-v23 {
+  background: #ffffff;
+  padding: 40px 32px;
+}
+
+.preview-mockup-v23 {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mock-v23-title {
+  width: 50px;
+  height: 4px;
+  background: #ccc;
+  border-radius: 1px;
+}
+
+.mock-v23-space {
+  height: 24px;
+}
+
+.mock-v23-line {
+  width: 80%;
+  height: 2px;
+  background: #eee;
+  border-radius: 1px;
+}
+
+/* ---- V24 Preview — Glitch / Corrupted ---- */
+.preview-v24 {
+  background: #111;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.preview-mockup-v24 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.mock-v24-static {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 1px,
+    rgba(255, 255, 255, 0.02) 1px,
+    rgba(255, 255, 255, 0.02) 2px
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+.mock-v24-title {
+  font-family: monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #00ffff;
+  text-shadow: 2px 0 #ff0000, -2px 0 #00ff00;
+  letter-spacing: 0.15em;
+}
+
+.mock-v24-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.mock-v24-card {
+  height: 36px;
+  background: #1a1a1a;
+  border: 1px solid #00ffff;
+  border-radius: 0;
+}
+
+.mock-v24-vhs {
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  animation: mock-vhs 4s linear infinite;
+}
+
+@keyframes mock-vhs {
+  0% { transform: translateY(-40px); }
+  100% { transform: translateY(40px); }
+}
+
+/* ---- V25 Preview — Polished Final ---- */
+.preview-v25 {
+  background: #fafaf8;
+  padding: 20px;
+}
+
+.preview-mockup-v25 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mock-v25-header {
+  width: 60px;
+  height: 8px;
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.mock-v25-hero {
+  width: 180px;
+  height: 8px;
+  background: #1a1a1a;
+  border-radius: 4px;
+  margin: 2px auto;
+}
+
+.mock-v25-pills {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.mock-v25-pills span {
+  width: 30px;
+  height: 6px;
+  background: #e8e8e4;
+  border-radius: 3px;
+}
+
+.mock-v25-featured {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(135deg, #2b3a52, #3b5998);
+  border-radius: 6px;
+}
+
+.mock-v25-grid {
+  display: flex;
+  gap: 6px;
+}
+
+.mock-v25-card {
+  flex: 1;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #e8e8e4;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* V25 featured card styling in gallery */
+.gallery-card-featured {
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+}
+
+.gallery-version-final {
+  color: #fff !important;
+  background: var(--accent) !important;
+}
+
 /* ---- Locked Preview ---- */
 .preview-locked {
   background: var(--gray-100);
