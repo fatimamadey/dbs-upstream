@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upstream — Data-Driven Tech News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-group">
+        <a href="#" class="logo">
+          <span class="logo-icon">&#x25B2;</span> Upstream
+        </a>
+        <span class="tagline">Data-Driven Tech News</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#">Dashboard</a>
+        <a href="#">AI</a>
+        <a href="#">Cloud</a>
+        <a href="#">Security</a>
+        <a href="#">Business</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO KPI DASHBOARD ========== -->
+  <section class="hero-dashboard">
+    <div class="container">
+      <h2 class="section-label">
+        <span class="label-icon">&#x25C8;</span>
+        Key Metrics This Quarter
+      </h2>
+      <div class="kpi-row">
+        <div class="kpi-card">
+          <span class="kpi-number">$340B</span>
+          <span class="kpi-label">Cybersecurity Market</span>
+          <span class="kpi-delta positive">+18% YoY</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-number">2.1M</span>
+          <span class="kpi-label">New Tech Jobs in 2025</span>
+          <span class="kpi-delta positive">+12% YoY</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-number">67%</span>
+          <span class="kpi-label">5G Urban Coverage</span>
+          <span class="kpi-delta positive">+23% YoY</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-number">42%</span>
+          <span class="kpi-label">Data Centers on Renewables</span>
+          <span class="kpi-delta positive">+9% YoY</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRENDING TOPICS BAR CHART ========== -->
+  <section class="trending-section">
+    <div class="container">
+      <h2 class="section-label">
+        <span class="label-icon">&#x25B6;</span>
+        Trending Topics — Relative Popularity
+      </h2>
+      <div class="trending-chart">
+        <div class="trending-row">
+          <span class="trending-topic">Artificial Intelligence</span>
+          <div class="trending-bar-track">
+            <div class="trending-bar" style="--bar-width: 95%;" data-color="blue">
+              <span class="trending-value">95%</span>
+            </div>
+          </div>
+        </div>
+        <div class="trending-row">
+          <span class="trending-topic">Cybersecurity</span>
+          <div class="trending-bar-track">
+            <div class="trending-bar" style="--bar-width: 82%;" data-color="red">
+              <span class="trending-value">82%</span>
+            </div>
+          </div>
+        </div>
+        <div class="trending-row">
+          <span class="trending-topic">Cloud Computing</span>
+          <div class="trending-bar-track">
+            <div class="trending-bar" style="--bar-width: 74%;" data-color="purple">
+              <span class="trending-value">74%</span>
+            </div>
+          </div>
+        </div>
+        <div class="trending-row">
+          <span class="trending-topic">Renewable Energy</span>
+          <div class="trending-bar-track">
+            <div class="trending-bar" style="--bar-width: 61%;" data-color="green">
+              <span class="trending-value">61%</span>
+            </div>
+          </div>
+        </div>
+        <div class="trending-row">
+          <span class="trending-topic">5G &amp; Telecom</span>
+          <div class="trending-bar-track">
+            <div class="trending-bar" style="--bar-width: 53%;" data-color="orange">
+              <span class="trending-value">53%</span>
+            </div>
+          </div>
+        </div>
+        <div class="trending-row">
+          <span class="trending-topic">Fintech</span>
+          <div class="trending-bar-track">
+            <div class="trending-bar" style="--bar-width: 47%;" data-color="teal">
+              <span class="trending-value">47%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWS CARDS GRID ========== -->
+  <section class="news-grid-section">
+    <div class="container">
+      <h2 class="section-label">
+        <span class="label-icon">&#x25A0;</span>
+        Latest Data Stories
+      </h2>
+      <div class="news-grid">
+
+        <!-- CARD 1 — Pie Chart (conic-gradient) -->
+        <article class="news-card">
+          <div class="card-viz">
+            <div class="pie-chart" title="Healthcare 28%, Finance 22%, Retail 18%, Manufacturing 16%, Other 16%">
+              <!-- 28% healthcare, 22% finance, 18% retail, 16% manufacturing, 16% other -->
+            </div>
+            <div class="pie-legend">
+              <span class="legend-item"><span class="legend-dot" style="background:#3b82f6;"></span>Healthcare 28%</span>
+              <span class="legend-item"><span class="legend-dot" style="background:#22c55e;"></span>Finance 22%</span>
+              <span class="legend-item"><span class="legend-dot" style="background:#f97316;"></span>Retail 18%</span>
+              <span class="legend-item"><span class="legend-dot" style="background:#8b5cf6;"></span>Manufacturing 16%</span>
+              <span class="legend-item"><span class="legend-dot" style="background:#ef4444;"></span>Other 16%</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-ai">AI</span>
+            <h3 class="card-title">AI Spending by Sector: Healthcare Leads at 28%, Finance at 22%</h3>
+            <p class="card-excerpt">Enterprise AI investment continues to shift toward healthcare applications, with the sector commanding the largest share of total AI spending for the first time.</p>
+            <a href="#" class="card-link">Read full analysis &#x2192;</a>
+          </div>
+        </article>
+
+        <!-- CARD 2 — Horizontal Bar Chart -->
+        <article class="news-card">
+          <div class="card-viz">
+            <div class="bar-chart">
+              <div class="bar-row">
+                <span class="bar-label">Python</span>
+                <div class="bar-track">
+                  <div class="bar-fill" style="--fill: 88%; background: #3b82f6;"></div>
+                </div>
+                <span class="bar-value">88%</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">JavaScript</span>
+                <div class="bar-track">
+                  <div class="bar-fill" style="--fill: 74%; background: #f97316;"></div>
+                </div>
+                <span class="bar-value">74%</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">TypeScript</span>
+                <div class="bar-track">
+                  <div class="bar-fill" style="--fill: 61%; background: #8b5cf6;"></div>
+                </div>
+                <span class="bar-value">61%</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Rust</span>
+                <div class="bar-track">
+                  <div class="bar-fill" style="--fill: 38%; background: #ef4444;"></div>
+                </div>
+                <span class="bar-value">38%</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Go</span>
+                <div class="bar-track">
+                  <div class="bar-fill" style="--fill: 33%; background: #14b8a6;"></div>
+                </div>
+                <span class="bar-value">33%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-software">Software</span>
+            <h3 class="card-title">Programming Language Popularity: Python Widens Lead Over JavaScript</h3>
+            <p class="card-excerpt">Python's dominance in AI/ML development has propelled it to an all-time high in developer surveys, while Rust continues its rapid climb among systems programmers.</p>
+            <a href="#" class="card-link">Read full analysis &#x2192;</a>
+          </div>
+        </article>
+
+        <!-- CARD 3 — Big Stat Number Callout -->
+        <article class="news-card">
+          <div class="card-viz viz-stat">
+            <div class="big-stat">
+              <span class="stat-dollar">$</span>
+              <span class="stat-number">340</span>
+              <span class="stat-unit">Billion</span>
+            </div>
+            <div class="stat-context">
+              <span class="stat-context-label">Global Cybersecurity Market</span>
+              <div class="stat-mini-bar">
+                <div class="stat-mini-fill" style="--fill: 72%;"></div>
+              </div>
+              <span class="stat-context-note">72% of Fortune 500 increased security budgets</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-security">Security</span>
+            <h3 class="card-title">$340 Billion: Global Cybersecurity Market Hits Record High</h3>
+            <p class="card-excerpt">Rising threats from AI-powered attacks and stricter regulatory frameworks worldwide drive unprecedented investment in cybersecurity infrastructure.</p>
+            <a href="#" class="card-link">Read full analysis &#x2192;</a>
+          </div>
+        </article>
+
+        <!-- CARD 4 — Stacked Bar -->
+        <article class="news-card">
+          <div class="card-viz">
+            <div class="stacked-bar-chart">
+              <div class="stacked-label">Cloud Market Share 2025</div>
+              <div class="stacked-bar">
+                <div class="stacked-segment seg-aws" style="--seg-width: 31%;" title="AWS 31%">
+                  <span>AWS</span>
+                  <span>31%</span>
+                </div>
+                <div class="stacked-segment seg-azure" style="--seg-width: 25%;" title="Azure 25%">
+                  <span>Azure</span>
+                  <span>25%</span>
+                </div>
+                <div class="stacked-segment seg-gcp" style="--seg-width: 11%;" title="GCP 11%">
+                  <span>GCP</span>
+                  <span>11%</span>
+                </div>
+                <div class="stacked-segment seg-other" style="--seg-width: 33%;" title="Others 33%">
+                  <span>Others</span>
+                  <span>33%</span>
+                </div>
+              </div>
+              <div class="stacked-bar stacked-bar-prev">
+                <div class="stacked-label-sm">vs. 2024</div>
+                <div class="stacked-segment seg-aws" style="--seg-width: 33%;" title="AWS 33%">
+                  <span>33%</span>
+                </div>
+                <div class="stacked-segment seg-azure" style="--seg-width: 23%;" title="Azure 23%">
+                  <span>23%</span>
+                </div>
+                <div class="stacked-segment seg-gcp" style="--seg-width: 10%;" title="GCP 10%">
+                  <span>10%</span>
+                </div>
+                <div class="stacked-segment seg-other" style="--seg-width: 34%;" title="Others 34%">
+                  <span>34%</span>
+                </div>
+              </div>
+              <div class="stacked-legend">
+                <span><span class="legend-dot" style="background:#f97316;"></span>AWS</span>
+                <span><span class="legend-dot" style="background:#3b82f6;"></span>Azure</span>
+                <span><span class="legend-dot" style="background:#ef4444;"></span>GCP</span>
+                <span><span class="legend-dot" style="background:#94a3b8;"></span>Others</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-infra">Infrastructure</span>
+            <h3 class="card-title">Cloud Market Share: AWS 31%, Azure 25%, GCP 11%</h3>
+            <p class="card-excerpt">Azure narrows the gap with AWS as enterprise hybrid-cloud migrations accelerate, while Google Cloud sees the fastest year-over-year growth at 10%.</p>
+            <a href="#" class="card-link">Read full analysis &#x2192;</a>
+          </div>
+        </article>
+
+        <!-- CARD 5 — Donut Chart (conic-gradient with inner circle) -->
+        <article class="news-card">
+          <div class="card-viz">
+            <div class="donut-wrapper">
+              <div class="donut-chart">
+                <div class="donut-hole">
+                  <span class="donut-center-num">42%</span>
+                  <span class="donut-center-label">Renewable</span>
+                </div>
+              </div>
+              <div class="donut-legend">
+                <span class="legend-item"><span class="legend-dot" style="background:#22c55e;"></span>Renewable 42%</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#3b82f6;"></span>Natural Gas 31%</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#94a3b8;"></span>Coal 15%</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#f97316;"></span>Nuclear 12%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-environment">Environment</span>
+            <h3 class="card-title">Renewable Energy Powers 42% of Global Data Centers</h3>
+            <p class="card-excerpt">Major cloud providers' net-zero commitments accelerate the shift to renewable-powered data centers, with solar and wind leading the transition.</p>
+            <a href="#" class="card-link">Read full analysis &#x2192;</a>
+          </div>
+        </article>
+
+        <!-- CARD 6 — Comparison Bars (two bars side by side) -->
+        <article class="news-card">
+          <div class="card-viz">
+            <div class="comparison-chart">
+              <div class="comparison-header">Five-Year Funding Comparison (Billions)</div>
+              <div class="comparison-row">
+                <span class="comparison-year">2021</span>
+                <div class="comparison-pair">
+                  <div class="comparison-bar-group">
+                    <div class="comparison-bar cb-ai" style="--fill: 48%;" title="AI: $48B"></div>
+                    <div class="comparison-bar cb-fintech" style="--fill: 62%;" title="Fintech: $62B"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="comparison-row">
+                <span class="comparison-year">2022</span>
+                <div class="comparison-pair">
+                  <div class="comparison-bar-group">
+                    <div class="comparison-bar cb-ai" style="--fill: 55%;" title="AI: $55B"></div>
+                    <div class="comparison-bar cb-fintech" style="--fill: 51%;" title="Fintech: $51B"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="comparison-row">
+                <span class="comparison-year">2023</span>
+                <div class="comparison-pair">
+                  <div class="comparison-bar-group">
+                    <div class="comparison-bar cb-ai" style="--fill: 68%;" title="AI: $68B"></div>
+                    <div class="comparison-bar cb-fintech" style="--fill: 44%;" title="Fintech: $44B"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="comparison-row">
+                <span class="comparison-year">2024</span>
+                <div class="comparison-pair">
+                  <div class="comparison-bar-group">
+                    <div class="comparison-bar cb-ai" style="--fill: 82%;" title="AI: $82B"></div>
+                    <div class="comparison-bar cb-fintech" style="--fill: 39%;" title="Fintech: $39B"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="comparison-row">
+                <span class="comparison-year">2025</span>
+                <div class="comparison-pair">
+                  <div class="comparison-bar-group">
+                    <div class="comparison-bar cb-ai" style="--fill: 95%;" title="AI: $95B"></div>
+                    <div class="comparison-bar cb-fintech" style="--fill: 36%;" title="Fintech: $36B"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="comparison-legend">
+                <span><span class="legend-dot" style="background:#8b5cf6;"></span>AI Startups</span>
+                <span><span class="legend-dot" style="background:#14b8a6;"></span>Fintech</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-business">Business</span>
+            <h3 class="card-title">Startup Funding: AI Startups vs. Fintech — A Five-Year Comparison</h3>
+            <p class="card-excerpt">AI startup funding has nearly doubled since 2021, overtaking fintech in 2022 and pulling dramatically ahead as generative AI reshapes the venture landscape.</p>
+            <a href="#" class="card-link">Read full analysis &#x2192;</a>
+          </div>
+        </article>
+
+        <!-- CARD 7 — Progress Bar with Percentage -->
+        <article class="news-card">
+          <div class="card-viz viz-progress">
+            <div class="progress-hero-number">67%</div>
+            <div class="progress-hero-label">of urban areas worldwide</div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" style="--fill: 67%;"></div>
+              </div>
+              <div class="progress-markers">
+                <span>0%</span>
+                <span>25%</span>
+                <span>50%</span>
+                <span>75%</span>
+                <span>100%</span>
+              </div>
+            </div>
+            <div class="progress-breakdown">
+              <div class="progress-mini">
+                <span class="progress-mini-label">North America</span>
+                <div class="progress-mini-track"><div class="progress-mini-fill" style="--fill: 84%; background:#3b82f6;"></div></div>
+                <span class="progress-mini-val">84%</span>
+              </div>
+              <div class="progress-mini">
+                <span class="progress-mini-label">Europe</span>
+                <div class="progress-mini-track"><div class="progress-mini-fill" style="--fill: 72%; background:#22c55e;"></div></div>
+                <span class="progress-mini-val">72%</span>
+              </div>
+              <div class="progress-mini">
+                <span class="progress-mini-label">Asia Pacific</span>
+                <div class="progress-mini-track"><div class="progress-mini-fill" style="--fill: 58%; background:#f97316;"></div></div>
+                <span class="progress-mini-val">58%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-telecom">Telecom</span>
+            <h3 class="card-title">5G Coverage Reaches 67% of Urban Areas Worldwide</h3>
+            <p class="card-excerpt">Aggressive infrastructure rollouts in Asia-Pacific and Latin America close the digital divide, with full urban coverage projected by 2028.</p>
+            <a href="#" class="card-link">Read full analysis &#x2192;</a>
+          </div>
+        </article>
+
+        <!-- CARD 8 — Mini Stepped Line Chart -->
+        <article class="news-card">
+          <div class="card-viz">
+            <div class="stepped-chart">
+              <div class="stepped-title">Tech Employment Growth (Millions of New Jobs)</div>
+              <div class="stepped-graph">
+                <div class="stepped-col">
+                  <div class="stepped-bar-inner" style="--height: 38%;"></div>
+                  <span class="stepped-label">2020</span>
+                  <span class="stepped-val">0.8M</span>
+                </div>
+                <div class="stepped-col">
+                  <div class="stepped-bar-inner" style="--height: 48%;"></div>
+                  <span class="stepped-label">2021</span>
+                  <span class="stepped-val">1.0M</span>
+                </div>
+                <div class="stepped-col">
+                  <div class="stepped-bar-inner" style="--height: 55%;"></div>
+                  <span class="stepped-label">2022</span>
+                  <span class="stepped-val">1.2M</span>
+                </div>
+                <div class="stepped-col">
+                  <div class="stepped-bar-inner" style="--height: 62%;"></div>
+                  <span class="stepped-label">2023</span>
+                  <span class="stepped-val">1.4M</span>
+                </div>
+                <div class="stepped-col">
+                  <div class="stepped-bar-inner" style="--height: 78%;"></div>
+                  <span class="stepped-label">2024</span>
+                  <span class="stepped-val">1.7M</span>
+                </div>
+                <div class="stepped-col highlighted">
+                  <div class="stepped-bar-inner" style="--height: 95%;"></div>
+                  <span class="stepped-label">2025</span>
+                  <span class="stepped-val">2.1M</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag tag-industry">Industry</span>
+            <h3 class="card-title">Tech Employment Trend: 2.1M New Jobs Created in 2025</h3>
+            <p class="card-excerpt">Demand for AI engineers, cloud architects, and cybersecurity analysts fuels the strongest year of tech hiring since the pandemic recovery began.</p>
+            <a href="#" class="card-link">Read full analysis &#x2192;</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="newsletter-section">
+    <div class="container newsletter-inner">
+      <div class="newsletter-text">
+        <h2>Get the Data, Weekly</h2>
+        <p>Join 85,000+ tech leaders who receive our data-driven insights every Tuesday morning.</p>
+      </div>
+      <form class="newsletter-form" action="#" method="post">
+        <input type="email" placeholder="you@company.com" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">&#x25B2;</span> Upstream
+        <span class="footer-copy">&copy; 2026 Upstream Media. All rights reserved.</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="#">About</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+        <a href="#">RSS</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

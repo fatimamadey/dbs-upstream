@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSTREAM // v11 - Gaming Aesthetic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scanline overlay -->
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">UPSTREAM</span>
+                <span class="logo-bracket">]</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active"><span class="nav-icon">&#9654;</span> START</a></li>
+                    <li class="nav-item"><a href="#news" class="nav-link"><span class="nav-icon">&#9654;</span> NEWS</a></li>
+                    <li class="nav-item"><a href="#scores" class="nav-link"><span class="nav-icon">&#9654;</span> SCORES</a></li>
+                    <li class="nav-item"><a href="#options" class="nav-link"><span class="nav-icon">&#9654;</span> OPTIONS</a></li>
+                </ul>
+            </nav>
+            <div class="header-stats">
+                <span class="stat">P1</span>
+                <span class="stat-divider">|</span>
+                <span class="stat">HI-SCORE: 999,999</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Title Screen -->
+    <section class="hero" id="hero">
+        <div class="hero-inner">
+            <div class="hero-decoration-top" aria-hidden="true"></div>
+            <p class="hero-insert">- INSERT COIN -</p>
+            <h1 class="hero-title">PRESS START<br>TO READ</h1>
+            <p class="hero-subtitle">PLAYER 1 READY</p>
+            <div class="hero-bar">
+                <span class="hero-bar-label">LOADING NEWS...</span>
+                <div class="hero-bar-track">
+                    <div class="hero-bar-fill"></div>
+                </div>
+                <span class="hero-bar-pct">100%</span>
+            </div>
+            <div class="hero-controls" aria-hidden="true">
+                <div class="dpad">
+                    <div class="dpad-up"></div>
+                    <div class="dpad-right"></div>
+                    <div class="dpad-down"></div>
+                    <div class="dpad-left"></div>
+                    <div class="dpad-center"></div>
+                </div>
+                <div class="action-buttons">
+                    <div class="btn-a">A</div>
+                    <div class="btn-b">B</div>
+                </div>
+            </div>
+            <div class="hero-decoration-bottom" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <!-- Trending / Power-Ups -->
+    <section class="powerups" id="scores">
+        <div class="section-header">
+            <h2 class="section-title">// POWER-UPS COLLECTED</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="powerups-grid">
+            <div class="powerup powerup--green">
+                <div class="powerup-icon">&#9733;</div>
+                <span class="powerup-label">TRENDING</span>
+                <span class="powerup-text">Cloud Gaming</span>
+            </div>
+            <div class="powerup powerup--purple">
+                <div class="powerup-icon">&#9889;</div>
+                <span class="powerup-label">HOT</span>
+                <span class="powerup-text">Ray Tracing 8K</span>
+            </div>
+            <div class="powerup powerup--pink">
+                <div class="powerup-icon">&#9829;</div>
+                <span class="powerup-label">+1 UP</span>
+                <span class="powerup-text">Indie GOTY</span>
+            </div>
+            <div class="powerup powerup--cyan">
+                <div class="powerup-icon">&#9670;</div>
+                <span class="powerup-label">RARE DROP</span>
+                <span class="powerup-text">AI NPCs</span>
+            </div>
+            <div class="powerup powerup--green">
+                <div class="powerup-icon">&#9733;</div>
+                <span class="powerup-label">LEGENDARY</span>
+                <span class="powerup-text">GTA VII Sales</span>
+            </div>
+            <div class="powerup powerup--purple">
+                <div class="powerup-icon">&#9889;</div>
+                <span class="powerup-label">LEVEL UP</span>
+                <span class="powerup-text">Esports $2B</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid / Game Cards -->
+    <section class="news" id="news">
+        <div class="section-header">
+            <h2 class="section-title">// SELECT YOUR QUEST</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="news-grid">
+
+            <!-- Card 1 -->
+            <article class="card card--rarity-legendary">
+                <div class="card-rarity">&#9733; LEGENDARY</div>
+                <div class="card-image card-image--checkerboard-green">
+                    <div class="card-image-label">GAMING</div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">GTA VII Breaks Every Sales Record in Gaming History</h3>
+                    <p class="card-text">Rockstar's latest opus shatters all previous benchmarks within its first 72 hours, rewriting what blockbuster entertainment means for the industry.</p>
+                    <div class="card-xp">
+                        <span class="card-xp-label">XP +9500</span>
+                        <div class="card-xp-track"><div class="card-xp-fill" style="width: 95%"></div></div>
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-tag card-tag--green">GAMING</span>
+                        <span class="card-date">MAR 31, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card card--rarity-epic">
+                <div class="card-rarity">&#9670; EPIC</div>
+                <div class="card-image card-image--stripes-cyan">
+                    <div class="card-image-label">INFRA</div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Cloud Gaming Latency Drops Below 10ms on 5G Networks</h3>
+                    <p class="card-text">The last barrier to seamless cloud gaming crumbles as next-gen 5G infrastructure achieves sub-10ms round-trip latency in real-world tests.</p>
+                    <div class="card-xp">
+                        <span class="card-xp-label">XP +8200</span>
+                        <div class="card-xp-track"><div class="card-xp-fill" style="width: 82%"></div></div>
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-tag card-tag--cyan">INFRASTRUCTURE</span>
+                        <span class="card-date">MAR 30, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card card--rarity-rare">
+                <div class="card-rarity">&#9829; RARE</div>
+                <div class="card-image card-image--checkerboard-pink">
+                    <div class="card-image-label">GAMING</div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Indie Developer's Solo Project Wins Game of the Year</h3>
+                    <p class="card-text">A single developer working from their bedroom has beaten AAA studios to claim the most coveted award in the industry. The community celebrates.</p>
+                    <div class="card-xp">
+                        <span class="card-xp-label">XP +7800</span>
+                        <div class="card-xp-track"><div class="card-xp-fill" style="width: 78%"></div></div>
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-tag card-tag--pink">GAMING</span>
+                        <span class="card-date">MAR 29, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card card--rarity-legendary">
+                <div class="card-rarity">&#9733; LEGENDARY</div>
+                <div class="card-image card-image--stripes-purple">
+                    <div class="card-image-label">HARDWARE</div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">NVIDIA's New GPU Renders Ray Tracing in Real-Time at 8K</h3>
+                    <p class="card-text">The next-generation graphics card pushes pixel-perfect ray-traced rendering into 8K territory, unlocking visual fidelity once thought impossible.</p>
+                    <div class="card-xp">
+                        <span class="card-xp-label">XP +9100</span>
+                        <div class="card-xp-track"><div class="card-xp-fill" style="width: 91%"></div></div>
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-tag card-tag--purple">HARDWARE</span>
+                        <span class="card-date">MAR 28, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="card card--rarity-epic">
+                <div class="card-rarity">&#9670; EPIC</div>
+                <div class="card-image card-image--checkerboard-cyan">
+                    <div class="card-image-label">ESPORTS</div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Esports Prize Pools Surpass $2 Billion Globally for First Time</h3>
+                    <p class="card-text">Competitive gaming reaches a historic milestone as combined tournament winnings cross the two-billion-dollar mark, cementing esports as mainstream.</p>
+                    <div class="card-xp">
+                        <span class="card-xp-label">XP +8800</span>
+                        <div class="card-xp-track"><div class="card-xp-fill" style="width: 88%"></div></div>
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-tag card-tag--cyan">ESPORTS</span>
+                        <span class="card-date">MAR 27, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="card card--rarity-rare">
+                <div class="card-rarity">&#9829; RARE</div>
+                <div class="card-image card-image--stripes-green">
+                    <div class="card-image-label">HARDWARE</div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Retro Console Market Booms: NES Cartridges Now Worth Thousands</h3>
+                    <p class="card-text">Nostalgia-driven collectors are pushing prices for sealed retro games into five-figure territory, turning dusty attic finds into small fortunes.</p>
+                    <div class="card-xp">
+                        <span class="card-xp-label">XP +7200</span>
+                        <div class="card-xp-track"><div class="card-xp-fill" style="width: 72%"></div></div>
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-tag card-tag--green">HARDWARE</span>
+                        <span class="card-date">MAR 26, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="card card--rarity-epic">
+                <div class="card-rarity">&#9670; EPIC</div>
+                <div class="card-image card-image--checkerboard-purple">
+                    <div class="card-image-label">AI</div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">AI NPCs That Remember Your Choices Across Multiple Playthroughs</h3>
+                    <p class="card-text">A breakthrough in persistent NPC memory means characters now recall everything you have ever done, creating truly unique narrative experiences each time.</p>
+                    <div class="card-xp">
+                        <span class="card-xp-label">XP +8500</span>
+                        <div class="card-xp-track"><div class="card-xp-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-tag card-tag--purple">AI</span>
+                        <span class="card-date">MAR 25, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="card card--rarity-rare">
+                <div class="card-rarity">&#9829; RARE</div>
+                <div class="card-image card-image--stripes-pink">
+                    <div class="card-image-label">COMMUNITY</div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Speedrunner Beats Elden Ring in Under 4 Minutes Using New Glitch</h3>
+                    <p class="card-text">The speedrunning community erupts as a newly discovered sequence break allows a complete Elden Ring run in three minutes and forty-seven seconds.</p>
+                    <div class="card-xp">
+                        <span class="card-xp-label">XP +6900</span>
+                        <div class="card-xp-track"><div class="card-xp-fill" style="width: 69%"></div></div>
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-tag card-tag--pink">COMMUNITY</span>
+                        <span class="card-date">MAR 24, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Newsletter / Gamertag Signup -->
+    <section class="newsletter" id="options">
+        <div class="newsletter-inner">
+            <div class="newsletter-decoration" aria-hidden="true">
+                <div class="pixel-heart">&#9829; &#9829; &#9829;</div>
+            </div>
+            <h2 class="newsletter-title">ENTER YOUR GAMERTAG</h2>
+            <p class="newsletter-subtitle">JOIN THE PARTY // GET DAILY LOOT DROPS IN YOUR INBOX</p>
+            <form class="newsletter-form" action="#" method="post">
+                <div class="newsletter-input-wrapper">
+                    <label for="gamertag" class="sr-only">Email address</label>
+                    <input type="email" id="gamertag" class="newsletter-input" placeholder="player1@upstream.gg" required>
+                    <button type="submit" class="newsletter-btn">JOIN &gt;&gt;</button>
+                </div>
+            </form>
+            <p class="newsletter-note">+ 500 XP bonus for new subscribers</p>
+        </div>
+    </section>
+
+    <!-- Footer / Game Over -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-gameover">GAME OVER</div>
+            <div class="footer-continue">CONTINUE? 9...8...7...</div>
+            <div class="footer-credits">
+                <div class="footer-col">
+                    <h3 class="footer-heading">// CREDITS</h3>
+                    <ul class="footer-list">
+                        <li>DIRECTOR: UPSTREAM TEAM</li>
+                        <li>DESIGN: PIXEL DIVISION</li>
+                        <li>CODE: ARCADE LABS</li>
+                        <li>AUDIO: 8-BIT SOUND CO.</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">// WARPS</h3>
+                    <ul class="footer-list">
+                        <li><a href="#hero">WORLD 1: HOME</a></li>
+                        <li><a href="#news">WORLD 2: NEWS</a></li>
+                        <li><a href="#scores">WORLD 3: SCORES</a></li>
+                        <li><a href="#options">WORLD 4: OPTIONS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">// STATS</h3>
+                    <ul class="footer-list">
+                        <li>ARTICLES: 999+</li>
+                        <li>READERS: 1,000,000</li>
+                        <li>UPTIME: 99.9%</li>
+                        <li>VERSION: 11.0</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UPSTREAM // ALL RIGHTS RESERVED // NO CHEAT CODES ALLOWED</p>
+                <p class="footer-easter">&#8593; &#8593; &#8595; &#8595; &#8592; &#8594; &#8592; &#8594; B A START</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

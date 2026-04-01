@@ -421,6 +421,285 @@ body {
   border-radius: 4px;
 }
 
+/* ---- V2 Preview — Dark Mode ---- */
+.preview-v2 {
+  background: #0d0d0d;
+  padding: 20px;
+}
+
+.preview-mockup-v2 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mock-v2-header {
+  height: 8px;
+  width: 60px;
+  background: linear-gradient(90deg, #00d4ff, #a855f7);
+  border-radius: 4px;
+}
+
+.mock-v2-hero {
+  height: 6px;
+  width: 160px;
+  background: #333;
+  border-radius: 3px;
+  margin: 4px auto;
+}
+
+.mock-v2-pills {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.mock-v2-pills span {
+  width: 36px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.mock-v2-pills span:nth-child(1) { background: #00d4ff; }
+.mock-v2-pills span:nth-child(2) { background: #a855f7; }
+.mock-v2-pills span:nth-child(3) { background: #22c55e; }
+
+.mock-v2-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 6px;
+}
+
+.mock-v2-card-lg {
+  background: linear-gradient(135deg, #1a1a1a, #242424);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 5px;
+  height: 64px;
+  grid-row: span 2;
+}
+
+.mock-v2-card {
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  height: 29px;
+}
+
+/* ---- V6 Preview — Futuristic / Sci-Fi ---- */
+.preview-v6 {
+  background: linear-gradient(135deg, #050a18, #1a0a2e);
+  padding: 20px;
+  position: relative;
+}
+
+.preview-mockup-v6 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.mock-v6-grid-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(0, 240, 255, 0.04) 19px, rgba(0, 240, 255, 0.04) 20px),
+    repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(0, 240, 255, 0.04) 19px, rgba(0, 240, 255, 0.04) 20px);
+  pointer-events: none;
+}
+
+.mock-v6-logo {
+  width: 80px;
+  height: 10px;
+  background: linear-gradient(90deg, #00f0ff, #ff00ff, #00f0ff);
+  background-size: 200% 100%;
+  animation: holo-shift 3s linear infinite;
+  border-radius: 2px;
+}
+
+@keyframes holo-shift {
+  0% { background-position: 0% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.mock-v6-holo {
+  width: 140px;
+  height: 6px;
+  background: rgba(0, 240, 255, 0.2);
+  border-radius: 2px;
+}
+
+.mock-v6-cards {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.mock-v6-card {
+  flex: 1;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 240, 255, 0.15);
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+}
+
+/* ---- V10 Preview — Infographic Heavy ---- */
+.preview-v10 {
+  background: #ffffff;
+  padding: 20px;
+}
+
+.preview-mockup-v10 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mock-v10-stats {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.mock-v10-stat {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  text-align: center;
+}
+
+.mock-v10-num {
+  font-family: -apple-system, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.mock-v10-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mock-v10-bar {
+  height: 6px;
+  border-radius: 3px;
+}
+
+.mock-v10-pie {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: conic-gradient(#3b82f6 0% 28%, #22c55e 28% 50%, #f97316 50% 72%, #8b5cf6 72% 100%);
+  margin: 0 auto;
+}
+
+/* ---- V11 Preview — Gaming Aesthetic ---- */
+.preview-v11 {
+  background: #0a0a0a;
+  padding: 20px;
+}
+
+.preview-mockup-v11 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.mock-v11-title {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #39ff14;
+  text-shadow: 0 0 6px #39ff14;
+  letter-spacing: 0.15em;
+}
+
+.mock-v11-hp {
+  width: 100%;
+  height: 8px;
+  background: #1a1a1a;
+  border: 1px solid #39ff14;
+}
+
+.mock-v11-hp-fill {
+  width: 72%;
+  height: 100%;
+  background: repeating-linear-gradient(90deg, #39ff14, #39ff14 8px, #0a0a0a 8px, #0a0a0a 10px);
+}
+
+.mock-v11-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  width: 100%;
+}
+
+.mock-v11-card {
+  height: 40px;
+  background: #111;
+  border: 1px solid #39ff14;
+  box-shadow: 0 0 4px rgba(57, 255, 20, 0.15);
+}
+
+/* ---- V19 Preview — Classic Blog ---- */
+.preview-v19 {
+  background: #faf9f6;
+  padding: 24px 32px;
+}
+
+.preview-mockup-v19 {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mock-v19-title {
+  width: 80px;
+  height: 10px;
+  background: #333;
+  border-radius: 1px;
+  margin: 0 auto 4px;
+}
+
+.mock-v19-featured {
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(135deg, #c4b5a0, #8fafcf);
+  border-radius: 3px;
+  margin-bottom: 4px;
+}
+
+.mock-v19-line {
+  width: 100%;
+  height: 4px;
+  background: #e0ddd8;
+  border-radius: 2px;
+}
+
+.mock-v19-hr {
+  width: 100%;
+  height: 1px;
+  background: #d4cfc5;
+  margin: 4px 0;
+}
+
 /* ---- V4 Preview — Editorial Magazine ---- */
 .preview-v4 {
   background: #f8f6f1;
